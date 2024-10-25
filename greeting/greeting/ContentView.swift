@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let messages: [DataItemModel] = [
+            .init(text: "Hello There", color: .green),
+            .init(text: "Welcome to Swift Programming", color: .gray),
+            .init(text: "Are you ready?", color: .yellow),
+            .init(text: "Start Exploring", color: .red),
+            .init(text: "Boom!", color: .purple)]
+    
     var body: some View {
         VStack(alignment: .leading) {
-            TextView(text: "Hello There", color: .green)
-            TextView(text: "Welcome to Swift Programming", color: .gray)
-            TextView(text: "Are you ready?", color: .yellow)
-            TextView(text: "Start Exploring", color: .red)
-            TextView(text: "Boom!", color: .purple)
+            ForEach(messages){ item in TextView(text: item.text, color: item.color)}
         }
         .padding()
     }
