@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct TitleView: View {
+    
+    @State private var subTitle: String = "Exploring iOS Programming"
+    var subTitles = ["Herp", "Derp", "Moo", "Cow"]
+    
+    
     let lineWidth = 15.0
     let diameter = 70.0
     @State private var isRotated: Bool = false
@@ -27,9 +32,12 @@ struct TitleView: View {
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                 
-                Text("Exploring ios programing")
+                Text(subTitle)
                     .font(.headline)
                     .fontWeight(.thin)
+            }
+            .onTapGesture {
+                subTitle = subTitles.randomElement() ?? subTitle
             }
             Spacer()
             Circle()
