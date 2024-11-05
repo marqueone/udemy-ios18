@@ -16,7 +16,9 @@ struct MessagesView: View {
             .init(text: "Boom!", color: .purple)]
     
     var body: some View {
-        ForEach(messages){ item in TextView(text: item.text, color: item.color)}
+        VStack(alignment: .leading) {
+            ForEach(messages){ item in TextView(text: item.text, color: item.color)}
+        }
         
     }
 }
