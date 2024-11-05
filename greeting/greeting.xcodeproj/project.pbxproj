@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0637256D2CD9C15A001ED25C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0637256C2CD9C15A001ED25C /* BackgroundView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		062B82792CCB465900A10F6E /* greeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0637256C2CD9C15A001ED25C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		062B82702CCB465900A10F6E = {
 			isa = PBXGroup;
 			children = (
+				0637256C2CD9C15A001ED25C /* BackgroundView.swift */,
 				062B827B2CCB465900A10F6E /* greeting */,
 				062B827A2CCB465900A10F6E /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0637256D2CD9C15A001ED25C /* BackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
